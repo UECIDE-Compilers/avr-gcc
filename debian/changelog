@@ -1,3 +1,9 @@
+avr-gcc (4.3.3) uecide; urgency=low
+
+  * Updated error regex
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 25 Aug 2015 16:23:15 +0100
+
 avr-gcc (4.3.2) uecide; urgency=low
 
   * Bumped version
