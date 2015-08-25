@@ -1,5 +1,6 @@
-avr-gcc (4.3.2) uecide; urgency=low
+avr-gcc (4.3.0) uecide; urgency=low
 
-  * Initial Release.
+  * Initial Import
 
- -- Matt Jenkins <matt@majenko.co.uk>  Mon, 26 Jan 2015 00:28:11 +0000
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 25 Aug 2015 15:45:42 +0100
+
