@@ -22,7 +22,7 @@ install-linux-amd64:
 	@echo "Extracting compiler archive..."
 	@tar -C tmp -jxf avr-tools-linux64.tar.bz2
 	@mkdir -p ${DESTDIR}/compilers/avr-gcc
-	@mv tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
+	@cp -R -p -H tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
 	@cp config/compiler.txt ${DESTDIR}/compilers/avr-gcc/compiler.txt
 	@rm -rf tmp
 
@@ -33,7 +33,7 @@ install-linux-i386:
 	@echo "Extracting compiler archive..."
 	@tar -C tmp -jxf avr-tools-linux32.tar.bz2
 	@mkdir -p ${DESTDIR}/compilers/avr-gcc
-	@mv tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
+	@cp -R -p -H tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
 	@cp config/compiler.txt ${DESTDIR}/compilers/avr-gcc/compiler.txt
 	@rm -rf tmp
 
@@ -45,7 +45,7 @@ install-windows-amd64:
 	@unzip -d tmp avr-tools-windows.zip
 	@mkdir -p ${DESTDIR}/compilers/avr-gcc
 	@find tmp -name '*.exe' -exec chmod 755 '{}' \;
-	@mv tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
+	@cp -R -p -H tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
 	@cp config/compiler.txt ${DESTDIR}/compilers/avr-gcc/compiler.txt
 	@rm -rf tmp
 
@@ -57,7 +57,7 @@ install-windows-i386:
 	@unzip -d tmp avr-tools-windows.zip
 	@mkdir -p ${DESTDIR}/compilers/avr-gcc
 	@find tmp -name '*.exe' -exec chmod 755 '{}' \+
-	@mv tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
+	@cp -R -p -H tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
 	@cp config/compiler.txt ${DESTDIR}/compilers/avr-gcc/compiler.txt
 	@rm -rf tmp
 
@@ -68,7 +68,7 @@ install-darwin-amd64:
 	@echo "Extracting compiler archive..."
 	@tar -C tmp -jxf avr-tools-darwin.tar.bz2
 	@mkdir -p ${DESTDIR}/compilers/avr-gcc
-	@mv tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
+	@cp -R -p -H tmp/avr/* ${DESTDIR}/compilers/avr-gcc/
 	@cp config/compiler.txt ${DESTDIR}/compilers/avr-gcc/compiler.txt
 	@rm -rf tmp
 
