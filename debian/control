@@ -9,7 +9,7 @@ Homepage: http://arduino.cc
 
 Package: avr-gcc
 Architecture: any
-XBSC-SoftwareVersion: 4.3.2
+XBSC-SoftwareVersion: 4.8.1
 Depends: 
 Description: avr-gcc
  

@@ -1,3 +1,15 @@
+avr-gcc (4.3.5) uecide; urgency=low
+
+  * Added core and board flags to base flag sections
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Wed, 26 Aug 2015 10:10:04 +0100
+
+avr-gcc (4.3.4) uecide; urgency=low
+
+  * Added software version header
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 25 Aug 2015 16:33:39 +0100
+
 avr-gcc (4.3.3) uecide; urgency=low
 
   * Updated error regex

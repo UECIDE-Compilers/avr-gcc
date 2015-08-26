@@ -3,7 +3,7 @@
 my $package = "unknown";
 
 my $ver = 4;
-my $maj = 3;
+my $maj = 8;
 my $min = 0;
 
 my $out = "";
