@@ -6,9 +6,9 @@ family=avr::avrtiny::teensy-avr
 warnings=
 extra.flags=
 
-cflags=-g::${warnings}::-ffunction-sections::-fdata-sections::${extra.flags}
-cppflags=-g::${warnings}::-fno-exceptions::-ffunction-sections::-fdata-sections::${extra.flags}
-ldflags=-Wl,--gc-sections::${extra.flags}
+cflags=-g::${warnings}::${core.cflags}::${board.cflags}::-ffunction-sections::-fdata-sections::${extra.flags}
+cppflags=-g::${warnings}::${core.cppflags}::${board.cppflags}::-fno-exceptions::-ffunction-sections::-fdata-sections::${extra.flags}
+ldflags=-Wl,--gc-sections::${core.ldflags}::${board.ldflags}::${extra.flags}
 
 gcc=${compiler.root}/bin/avr-gcc
 gpp=${compiler.root}/bin/avr-g++
