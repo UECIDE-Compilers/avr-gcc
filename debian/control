@@ -1,15 +1,19 @@
 Source: avr-gcc
 Section: compilers
-Priority: extra
 XBSC-Family: avr
+Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 Homepage: http://arduino.cc
 
 Package: avr-gcc
+Section: compilers
 Architecture: any
-XBSC-SoftwareVersion: 4.8.1
+XBSC-Group: AVR
 Depends: 
-Description: avr-gcc
- 
+Description: GCC 4.8.1 for AVR
+ Version 4.8.1 of the GCC toolchain is now the default for Arduino based systems.
+
+
+
