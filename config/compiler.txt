@@ -1,4 +1,5 @@
 name=avr-gcc
+description=GCC 4.8.1 for AVR
 version=%VERSION%
 revision=%REVISION%
 family=avr::avrtiny::teensy-avr
